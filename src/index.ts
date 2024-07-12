@@ -15,5 +15,6 @@ server.register(formBody)
 server.register(ScheduleRoutes)
 
 server.listen({
-  port: 3333,
-});
+  host: '0.0.0.0',
+  port: process.env.PORT ? Number(process.env.PORT) : 3333
+})
