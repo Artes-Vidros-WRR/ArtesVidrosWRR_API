@@ -1,4 +1,4 @@
-const apiBaseUrl = process.env.API_BASE_URL ? Number(process.env.PORT) : "http://localhost:3333";
+const apiBaseUrl = process.env.API_BASE_URL ? process.env.API_BASE_URL : "http://localhost:3333";
 
 export default function pingEndpoint() {
 
